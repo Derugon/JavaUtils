@@ -49,8 +49,8 @@ public final class Range {
      * @param  max maximum value of the range
      * @return     a list of integers from 1 to max
      */
-    public static List<Double> asDoubleList( final double max ) {
-        return asDoubleList( 1., max );
+    public static List<Double> asList( final double max ) {
+        return asList( 1., max );
     }
 
     /**
@@ -60,8 +60,8 @@ public final class Range {
      * @param  max maximum value of the range
      * @return     a list of integers from min to max
      */
-    public static List<Double> asDoubleList( final double min, final double max ) {
-        return asDoubleList( min, 1., max );
+    public static List<Double> asList( final double min, final double max ) {
+        return asList( min, 1., max );
     }
 
     /**
@@ -72,7 +72,7 @@ public final class Range {
      * @param  max  maximum value of the range
      * @return      a list of integers from min to max
      */
-    public static List<Double> asDoubleList( final double min, final double step, final double max ) {
+    public static List<Double> asList( final double min, final double step, final double max ) {
         final List<Double> list = new ArrayList<>();
         for ( double i = min ; i <= max ; i += step )
             list.add( i );
@@ -85,8 +85,8 @@ public final class Range {
      * @param  max maximum value of the range
      * @return     a list of integers from 1 to max
      */
-    public static List<Integer> asIntegerList( final int max ) {
-        return asIntegerList( 1, max );
+    public static List<Integer> asList( final int max ) {
+        return asList( 1, max );
     }
 
     /**
@@ -96,8 +96,8 @@ public final class Range {
      * @param  max maximum value of the range
      * @return     a list of integers from min to max
      */
-    public static List<Integer> asIntegerList( final int min, final int max ) {
-        return asIntegerList( min, 1, max );
+    public static List<Integer> asList( final int min, final int max ) {
+        return asList( min, 1, max );
     }
 
     /**
@@ -108,7 +108,7 @@ public final class Range {
      * @param  max  maximum value of the range
      * @return      a list of integers from min to max
      */
-    public static List<Integer> asIntegerList( final int min, final int step, final int max ) {
+    public static List<Integer> asList( final int min, final int step, final int max ) {
         final List<Integer> list = new ArrayList<>();
         for ( int i = min ; i <= max ; i += step )
             list.add( i );
